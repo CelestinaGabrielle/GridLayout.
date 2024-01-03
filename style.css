@@ -1,0 +1,106 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+}
+
+#container-01 {
+    display: flex;
+    grid-area: header;
+    padding: 0px 24px;
+    justify-content: space-between;
+    align-content: start;
+    justify-items: center;
+    align-items: center;
+}
+
+#container-02 {
+    display: flex;
+    grid-area: sidebar;
+    flex-flow: column;
+    width: 218px;
+    height: 968px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+    gap: 22px;
+    flex-shrink: 0;
+}
+
+#container-03 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem, 1rem;
+    padding: 3rem 0;
+}
+
+.item1 {
+    display: flex;
+    width: 146px;
+    height: 24px;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 404px;
+    height: 40px;
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+
+.item3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.pesquisar {
+    width: 500px;
+    height: 27px;
+    border: 1px solid #CCC;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.button {
+    width: 47px;
+    height: 31px;
+    border: 1px solid #CCC;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.button img {
+    width: 24px;
+}
+
+.Logo {
+    height: 20px;
+    flex-shrink: 0;
+}
+
+strong{
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.action{
+    color: #515151;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
